@@ -80,7 +80,7 @@ const Portfolio = () => {
       title: 'Autonomous Vehicle Control System',
       description: 'Arduino-based control system for self-driving car prototype with mechanical actuation and virtual delay implementation for smooth operation.',
       tech: ['Arduino', 'C++', 'Motor Drivers', 'Sensor Integration', 'Embedded Systems'],
-      image: 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400',
+      image: 'https://static.toiimg.com/thumb/msid-95870900,imgsize-1577577,width-400,height-225,resizemode-72/95870900.jpg',
       date: 'September 2024',
       features: ['Non-blocking control', 'Real-time operation', 'Mechanical integration', 'System efficiency']
     }
