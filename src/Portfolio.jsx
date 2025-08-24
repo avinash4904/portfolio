@@ -226,7 +226,7 @@ const Portfolio = () => {
               <div className="grid grid-cols-2 gap-6">
                
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-cyan-400">1692</div>
+                  <div className="text-3xl font-bold text-cyan-400">1710</div>
                   <div className="text-sm text-gray-400">LeetCode Rating</div>
                 </div>
                 <div className="text-center">
