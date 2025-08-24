@@ -224,10 +224,10 @@ const Portfolio = () => {
               </p>
               
               <div className="grid grid-cols-2 gap-6">
-                <div className="text-center">
+                {/* <div className="text-center">
                   <div className="text-3xl font-bold text-cyan-400">7.46</div>
                   <div className="text-sm text-gray-400">CPI</div>
-                </div>
+                </div> */}
                 <div className="text-center">
                   <div className="text-3xl font-bold text-cyan-400">1692</div>
                   <div className="text-sm text-gray-400">LeetCode Rating</div>
@@ -238,7 +238,7 @@ const Portfolio = () => {
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-cyan-400">586</div>
-                  <div className="text-sm text-gray-400">Global Rank</div>
+                  <div className="text-sm text-gray-400">Best Global Rank</div>
                 </div>
               </div>
             </div>
@@ -290,10 +290,10 @@ const Portfolio = () => {
                 <div className="flex-1">
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
                     <h3 className="text-xl font-semibold text-white">B.Tech. Mechanical Engineering</h3>
-                    <span className="text-cyan-400 font-semibold">CPI: 7.46</span>
+                    {/* <span className="text-cyan-400 font-semibold">CPI: 7.46</span> */}
                   </div>
                   <p className="text-gray-300 mb-1">Motilal Nehru National Institute of Technology, Allahabad</p>
-                  <p className="text-gray-400 text-sm">Current (till 6th semester)</p>
+                  {/* <p className="text-gray-400 text-sm">Current (till 6th semester)</p> */}
                 </div>
               </div>
             </div>
