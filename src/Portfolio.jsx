@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronDown, Github, Linkedin, Mail, ExternalLink, Code, Palette, Zap, Menu, X, MapPin, Phone, Award, BookOpen } from 'lucide-react';
-
+import myImage from "./assets/Holi.jpeg"
 const Portfolio = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
@@ -92,10 +92,10 @@ const Portfolio = () => {
       <nav className="fixed top-0 w-full z-50 bg-black/20 backdrop-blur-md border-b border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
-            <div className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
-              Avinash Gupta
+            <div className="text-1.5xl text-green font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
+              <i>Hii...</i>
             </div>
-            
+
             {/* Desktop Menu */}
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-6">
@@ -103,11 +103,10 @@ const Portfolio = () => {
                   <button
                     key={item}
                     onClick={() => scrollTo(item.toLowerCase())}
-                    className={`px-3 py-2 text-sm font-medium transition-all duration-300 ${
-                      activeSection === item.toLowerCase()
+                    className={`px-3 py-2 text-sm font-medium transition-all duration-300 ${activeSection === item.toLowerCase()
                         ? 'text-cyan-400 border-b-2 border-cyan-400'
                         : 'text-gray-300 hover:text-white hover:scale-105'
-                    }`}
+                      }`}
                   >
                     {item}
                   </button>
@@ -150,33 +149,35 @@ const Portfolio = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20"></div>
         <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
           <div className="mb-8">
-            <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 p-1">
-              <div className="w-full h-full rounded-full bg-slate-900 flex items-center justify-center">
-                <Code size={48} className="text-cyan-400" />
-              </div>
+            <div className="w-64 h-64 mx-auto rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 p-1">
+              <img
+                src={myImage}
+                alt="My Logo"
+                className="w-full h-full object-cover rounded-full bg-slate-900"
+              />
             </div>
           </div>
-          
+
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-cyan-200 to-blue-400 bg-clip-text text-transparent">
             Avinash Gupta
           </h1>
-          
+
           <p className="text-xl md:text-2xl text-gray-300 mb-4 max-w-3xl mx-auto leading-relaxed">
             B.Tech. Mechanical Engineering Student & Full Stack Developer
           </p>
-          
+
           <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto leading-relaxed">
             MNNIT Allahabad • Crafting innovative web solutions with React, Node.js, and modern technologies
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <button 
+            <button
               onClick={() => scrollTo('projects')}
               className="px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/25"
             >
               View My Projects
             </button>
-            <button 
+            <button
               onClick={() => scrollTo('contact')}
               className="px-8 py-4 border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-slate-900 rounded-full font-semibold transition-all duration-300 transform hover:scale-105"
             >
@@ -207,24 +208,24 @@ const Portfolio = () => {
           <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
             About Me
           </h2>
-          
+
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h3 className="text-2xl font-semibold mb-6 text-white">Engineering Student & Developer</h3>
               <p className="text-gray-300 mb-6 leading-relaxed">
-                I'm a passionate B.Tech. Mechanical Engineering student at MNNIT Allahabad with a strong 
-                inclination towards software development. My journey combines the analytical thinking of 
+                I'm a passionate B.Tech. Mechanical Engineering student at MNNIT Allahabad with a strong
+                inclination towards software development. My journey combines the analytical thinking of
                 engineering with the creativity of modern web development.
               </p>
               <p className="text-gray-300 mb-6 leading-relaxed">
-                I specialize in full-stack development using React.js and Node.js, with experience in 
-                building scalable web applications, autonomous vehicle control systems, and solving 
-                complex algorithmic problems. I'm also an active member of the Robotics Club and 
+                I specialize in full-stack development using React.js and Node.js, with experience in
+                building scalable web applications, autonomous vehicle control systems, and solving
+                complex algorithmic problems. I'm also an active member of the Robotics Club and
                 Self-Driving Car Team.
               </p>
-              
+
               <div className="grid grid-cols-2 gap-6">
-               
+
                 <div className="text-center">
                   <div className="text-3xl font-bold text-cyan-400">1710</div>
                   <div className="text-sm text-gray-400">LeetCode Rating</div>
@@ -239,7 +240,7 @@ const Portfolio = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className="relative">
               <div className="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 rounded-2xl p-8 backdrop-blur-sm border border-white/10">
                 <div className="space-y-6">
@@ -277,7 +278,7 @@ const Portfolio = () => {
           <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
             Education
           </h2>
-          
+
           <div className="space-y-8">
             <div className="bg-white/5 rounded-lg p-6 backdrop-blur-sm border border-white/10 hover:border-cyan-400/50 transition-all duration-300">
               <div className="flex items-start space-x-4">
@@ -287,14 +288,14 @@ const Portfolio = () => {
                 <div className="flex-1">
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
                     <h3 className="text-xl font-semibold text-white">B.Tech. Mechanical Engineering</h3>
-                    
+
                   </div>
                   <p className="text-gray-300 mb-1">Motilal Nehru National Institute of Technology, Allahabad</p>
-                  
+
                 </div>
               </div>
             </div>
-            
+
             <div className="bg-white/5 rounded-lg p-6 backdrop-blur-sm border border-white/10 hover:border-cyan-400/50 transition-all duration-300">
               <div className="flex items-start space-x-4">
                 <div className="mt-1">
@@ -310,7 +311,7 @@ const Portfolio = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className="bg-white/5 rounded-lg p-6 backdrop-blur-sm border border-white/10 hover:border-cyan-400/50 transition-all duration-300">
               <div className="flex items-start space-x-4">
                 <div className="mt-1">
@@ -336,7 +337,7 @@ const Portfolio = () => {
           <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
             Technical Skills
           </h2>
-          
+
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             {skills.map((skill, index) => (
               <div key={skill.name} className="bg-white/5 rounded-lg p-6 backdrop-blur-sm border border-white/10">
@@ -389,28 +390,28 @@ const Portfolio = () => {
           <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
             Featured Projects
           </h2>
-          
+
           <div className="space-y-12">
             {projects.map((project, index) => (
               <div key={index} className="bg-white/5 rounded-xl overflow-hidden backdrop-blur-sm border border-white/10 hover:border-cyan-400/50 transition-all duration-300">
                 <div className="grid md:grid-cols-2 gap-0">
                   <div className="relative overflow-hidden">
-                    <img 
-                      src={project.image} 
+                    <img
+                      src={project.image}
                       alt={project.title}
                       className="w-full h-64 md:h-full object-cover transition-transform duration-300 hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                   </div>
-                  
+
                   <div className="p-8">
                     <div className="flex justify-between items-start mb-4">
                       <h3 className="text-2xl font-semibold text-white">{project.title}</h3>
                       <span className="text-cyan-400 text-sm font-semibold">{project.date}</span>
                     </div>
-                    
+
                     <p className="text-gray-300 mb-6 leading-relaxed">{project.description}</p>
-                    
+
                     <div className="mb-6">
                       <h4 className="text-white font-semibold mb-3">Key Features:</h4>
                       <ul className="grid grid-cols-2 gap-2">
@@ -422,10 +423,10 @@ const Portfolio = () => {
                         ))}
                       </ul>
                     </div>
-                    
+
                     <div className="flex flex-wrap gap-2 mb-6">
                       {project.tech.map((tech, techIndex) => (
-                        <span 
+                        <span
                           key={techIndex}
                           className="px-3 py-1 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 text-cyan-300 text-xs rounded-full border border-cyan-500/30"
                         >
@@ -433,7 +434,7 @@ const Portfolio = () => {
                         </span>
                       ))}
                     </div>
-                    
+
                     <div className="flex space-x-4">
                       <button className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors">
                         <Github size={16} />
@@ -458,32 +459,51 @@ const Portfolio = () => {
           <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
             Let's Connect
           </h2>
-          
+
           <div className="text-center mb-12">
             <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-              Ready to collaborate on exciting projects or discuss opportunities? 
+              Ready to collaborate on exciting projects or discuss opportunities?
               I'm always open to connecting with fellow developers, innovators, and tech enthusiasts!
             </p>
-            
+
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               <div className="bg-white/5 rounded-lg p-6 backdrop-blur-sm border border-white/10">
                 <h3 className="text-xl font-semibold text-cyan-400 mb-4">Achievements</h3>
                 <div className="space-y-3 text-left">
                   <div className="flex items-center space-x-3">
                     <Award className="text-yellow-400" size={20} />
-                    <span className="text-gray-300">LeetCode Global Rank 586</span>
+                    <span className="text-gray-300">LeetCode best Global Rank 586</span>
                   </div>
-                  <div className="flex items-center space-x-3">
-                    <Code className="text-green-400" size={20} />
-                    <span className="text-gray-300">Top 13% LeetCoder (1692 rating)</span>
-                  </div>
+                  <a
+                    href="https://leetcode.com/u/avinash0824/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center space-x-3 hover:text-green-300 transition"
+                  >
+                    <Code className="text-green-400" size={22} />
+                    <span className="text-gray-300 ">Top 13% LeetCoder (1710 rating)</span>
+                  </a>
+
                   <div className="flex items-center space-x-3">
                     <Zap className="text-purple-400" size={20} />
                     <span className="text-gray-300">Chess Rating 1700+</span>
                   </div>
+                  <a
+                    href="https://docs.google.com/document/d/1DtQAQrDl-bjDf1Mu_34E0jmQEdQHOWo6iXqOOF1qsy8/edit?tab=t.0"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center space-x-3 hover:text-green-300 transition"
+                  >
+                    <Code className="text-green-400" size={20} />
+                    <span className="text-gray-300 ">Presented Spider Bot in Robo Expo (2Feb 2024)</span>
+                  </a>
+                  <div className="flex items-center space-x-3">
+                    <Award className="text-purple-400" size={30} />
+                    <span className="text-gray-300">Awarded for Innovative Writing at DST Inspire Science Camp (Dec2019-Jan20)</span>
+                  </div>
                 </div>
               </div>
-              
+
               <div className="bg-white/5 rounded-lg p-6 backdrop-blur-sm border border-white/10">
                 <h3 className="text-xl font-semibold text-purple-400 mb-4">Activities</h3>
                 <div className="space-y-3 text-left">
@@ -502,32 +522,32 @@ const Portfolio = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className="flex flex-col lg:flex-row gap-6 justify-center items-center">
-              <a 
+              <a
                 href="mailto:022avinashgupta@gmail.com"
                 className="flex items-center space-x-3 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105"
               >
                 <Mail size={20} />
                 <span>022avinashgupta@gmail.com</span>
               </a>
-              
-              <a 
+
+              <a
                 href="tel:+917905336348"
                 className="flex items-center space-x-3 bg-white/10 hover:bg-white/20 px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105"
               >
                 <Phone size={20} />
                 <span>+91-7905336348</span>
               </a>
-              
+
               <div className="flex space-x-6">
-                <a 
+                <a
                   href="https://github.com/avinash4904"
                   className="p-4 bg-white/10 hover:bg-white/20 rounded-full transition-all duration-300 transform hover:scale-110"
                 >
                   <Github size={24} />
                 </a>
-                <a 
+                <a
                   href="https://linkedin.com/in/avinash-gupta-1b2b90257"
                   className="p-4 bg-white/10 hover:bg-white/20 rounded-full transition-all duration-300 transform hover:scale-110"
                 >
@@ -535,7 +555,7 @@ const Portfolio = () => {
                 </a>
               </div>
             </div>
-            
+
             <div className="mt-8 text-gray-400 text-sm">
               <p>Also available at: avinash.20226040@mnnit.ac.in</p>
               <p>Roll No.: 20226040 • MNNIT Allahabad, Prayagraj</p>
