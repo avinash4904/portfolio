@@ -77,7 +77,11 @@ const Portfolio = () => {
       tech: ['React.js', 'Node.js', 'Express', 'MongoDB', 'JWT', 'Tailwind CSS'],
       image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=400',
       date: 'February 2025',
-      features: ['User authentication', 'RESTful APIs', 'Google Maps integration', 'Responsive design']
+      features: ['User authentication', 'RESTful APIs', 'Google Maps integration', 'Responsive design'],
+        link: 'https://rideease25.netlify.app/',
+      link2: 'https://github.com/avinash4904/nestora'
+    
+      
     },
     {
       title: 'Autonomous Vehicle Control System',
@@ -463,7 +467,7 @@ const Portfolio = () => {
                           rel="noopener noreferrer"
                           className="text-sm text-cyan-400 hover:underline"
                         >
-                          Try website
+                          Watch it
                         </a>
 
                       </button>
