@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronDown, Github, Linkedin, Mail, ExternalLink, Code, Palette, Zap, Menu, X, MapPin, Phone, Award, BookOpen } from 'lucide-react';
-import myImage from "./assets/Holi.jpeg"
+import myImage from "./assets/Holi2.jpg"
 const Portfolio = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
