@@ -48,16 +48,17 @@ const Portfolio = () => {
     setIsMenuOpen(false);
   };
 
-  const skills = [
-    { name: 'React.js', level: 95, color: 'from-blue-500 to-cyan-400' },
-    { name: 'JavaScript', level: 90, color: 'from-yellow-500 to-orange-400' },
-    { name: 'Node.js/Express.js', level: 88, color: 'from-green-500 to-emerald-400' },
-    { name: 'Python', level: 85, color: 'from-purple-500 to-pink-400' },
-    { name: 'C++', level: 80, color: 'from-red-500 to-pink-400' },
-    { name: 'MongoDB', level: 85, color: 'from-green-600 to-green-400' },
-    { name: 'MySQL', level: 82, color: 'from-blue-600 to-blue-400' },
-    { name: 'AWS/Cloud', level: 75, color: 'from-orange-500 to-yellow-400' }
-  ];
+ const skills = [
+  { name: 'React.js', level: 95, from: 'from-blue-500', to: 'to-cyan-400' },
+  { name: 'JavaScript', level: 90, from: 'from-yellow-500', to: 'to-orange-400' },
+  { name: 'Node.js/Express.js', level: 88, from: 'from-green-500', to: 'to-emerald-400' },
+  { name: 'Python', level: 85, from: 'from-purple-500', to: 'to-pink-400' },
+  { name: 'C++', level: 80, from: 'from-red-500', to: 'to-pink-400' },
+  { name: 'MongoDB', level: 85, from: 'from-green-600', to: 'to-green-400' },
+  { name: 'MySQL', level: 82, from: 'from-blue-600', to: 'to-blue-400' },
+  { name: 'AWS/Cloud', level: 75, from: 'from-orange-500', to: 'to-yellow-400' }
+];
+
 
   const projects = [
     {
@@ -66,7 +67,9 @@ const Portfolio = () => {
       tech: ['React.js', 'Node.js', 'Google Maps API', 'Real-time Tracking'],
       image: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=400',
       date: 'March 2025',
-      features: ['Route optimization', 'Driver authentication', 'Payment management', 'Real-time tracking']
+      features: ['Route optimization', 'Driver authentication', 'Payment management', 'Real-time tracking'],
+      link: 'https://rideease25.netlify.app/',
+      link2: 'https://github.com/AshutoshMadhesiya/RideEase'
     },
     {
       title: 'Nestora – Airbnb-Lite Platform',
@@ -104,8 +107,8 @@ const Portfolio = () => {
                     key={item}
                     onClick={() => scrollTo(item.toLowerCase())}
                     className={`px-3 py-2 text-sm font-medium transition-all duration-300 ${activeSection === item.toLowerCase()
-                        ? 'text-cyan-400 border-b-2 border-cyan-400'
-                        : 'text-gray-300 hover:text-white hover:scale-105'
+                      ? 'text-cyan-400 border-b-2 border-cyan-400'
+                      : 'text-gray-300 hover:text-white hover:scale-105'
                       }`}
                   >
                     {item}
@@ -205,7 +208,7 @@ const Portfolio = () => {
       {/* About Section */}
       <section id="about" className="py-20 relative">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
+          <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text ">
             About Me
           </h2>
 
@@ -275,7 +278,7 @@ const Portfolio = () => {
       {/* Education Section */}
       <section id="education" className="py-20 bg-black/20">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
+          <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text ">
             Education
           </h2>
 
@@ -334,26 +337,30 @@ const Portfolio = () => {
       {/* Skills Section */}
       <section id="skills" className="py-20">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
+          <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text ">
             Technical Skills
           </h2>
 
           <div className="grid md:grid-cols-2 gap-8 mb-12">
-            {skills.map((skill, index) => (
-              <div key={skill.name} className="bg-white/5 rounded-lg p-6 backdrop-blur-sm border border-white/10">
+            {skills.map((skill) => (
+              <div
+                key={skill.name}
+                className="bg-white/5 rounded-lg p-6 backdrop-blur-sm border border-white/10"
+              >
                 <div className="flex justify-between items-center mb-3">
                   <span className="text-white font-semibold">{skill.name}</span>
                   <span className="text-cyan-400">{skill.level}%</span>
                 </div>
-                <div className="w-full bg-gray-700 rounded-full h-3">
+                <div className="w-full bg-gray-700 rounded-full h-3 overflow-hidden">
                   <div
-                    className={`h-3 rounded-full bg-gradient-to-r ${skill.color} transition-all duration-1000 ease-out`}
+                    className={`h-3 rounded-full bg-gradient-to-r ${skill.from} ${skill.to} transition-all duration-1000 ease-out`}
                     style={{ width: `${skill.level}%` }}
                   ></div>
                 </div>
               </div>
             ))}
           </div>
+
 
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-white/5 rounded-lg p-6 backdrop-blur-sm border border-white/10 text-center">
@@ -387,7 +394,7 @@ const Portfolio = () => {
       {/* Projects Section */}
       <section id="projects" className="py-20 bg-black/20">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
+          <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text ">
             Featured Projects
           </h2>
 
@@ -438,11 +445,27 @@ const Portfolio = () => {
                     <div className="flex space-x-4">
                       <button className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors">
                         <Github size={16} />
-                        <span className="text-sm">View Code</span>
+                        <a
+                          href={project.link2}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-sm text-cyan-400 hover:underline"
+                        >
+                          View Code
+                        </a>
+
                       </button>
                       <button className="flex items-center space-x-2 text-cyan-400 hover:text-cyan-300 transition-colors">
                         <ExternalLink size={16} />
-                        <span className="text-sm">Learn More</span>
+                        <a
+                          href={project.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-sm text-cyan-400 hover:underline"
+                        >
+                          Try website
+                        </a>
+
                       </button>
                     </div>
                   </div>
@@ -456,7 +479,7 @@ const Portfolio = () => {
       {/* Contact Section */}
       <section id="contact" className="py-20">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
+          <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text ">
             Let's Connect
           </h2>
 

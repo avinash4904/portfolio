@@ -4,6 +4,7 @@
  * Tailwind will scan files matched by the `content` globs to generate CSS.
  */
 
+// tailwind.config.cjs
 module.exports = {
   content: [
     "./index.html",
@@ -22,5 +23,9 @@ module.exports = {
       },
     },
   },
+  safelist: [
+    { pattern: /from-(blue|yellow|green|purple|red|orange|cyan|emerald|pink|indigo|teal|lime)-[0-9]{3}/ },
+    { pattern: /to-(blue|yellow|green|purple|red|orange|cyan|emerald|pink|indigo|teal|lime)-[0-9]{3}/ },
+  ],
   plugins: [],
 };
