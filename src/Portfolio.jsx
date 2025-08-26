@@ -467,7 +467,7 @@ const Portfolio = () => {
                           rel="noopener noreferrer"
                           className="text-sm text-cyan-400 hover:underline"
                         >
-                          Watch it
+                          Watch it.
                         </a>
 
                       </button>
