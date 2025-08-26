@@ -28,13 +28,13 @@ const Portfolio = () => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          setIsVisible(prev => ({
+          setIsVisible((prev) => ({
             ...prev,
-            [entry.target.id]: entry.isIntersecting
+            [entry.target.id]: entry.isIntersecting,
           }));
         });
       },
-      { threshold: 0.1 }
+      { threshold: 0.3}
     );
 
     const elements = document.querySelectorAll('[data-animate]');
