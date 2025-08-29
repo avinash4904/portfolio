@@ -170,7 +170,7 @@ const Portfolio = () => {
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-300 mb-4 max-w-3xl mx-auto leading-relaxed">
-            B.Tech. Mechanical Engineering Student & Full Stack Developer
+            B.Tech. Final Year Student & Full Stack Developer
           </p>
 
           <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto leading-relaxed">
@@ -220,7 +220,7 @@ const Portfolio = () => {
             <div>
               <h3 className="text-2xl font-semibold mb-6 text-white">Engineering Student & Developer</h3>
               <p className="text-gray-300 mb-6 leading-relaxed">
-                I'm a passionate B.Tech. Mechanical Engineering student at MNNIT Allahabad with a strong
+                I'm a passionate Bachelor Technology undergraduate Student at MNNIT Allahabad with a strong
                 inclination towards software development. My journey combines the analytical thinking of
                 engineering with the creativity of modern web development.
               </p>
@@ -294,7 +294,7 @@ const Portfolio = () => {
                 </div>
                 <div className="flex-1">
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
-                    <h3 className="text-xl font-semibold text-white">B.Tech. Mechanical Engineering</h3>
+                    <h3 className="text-xl font-semibold text-white">Bachelor of Technology</h3>
 
                   </div>
                   <p className="text-gray-300 mb-1">Motilal Nehru National Institute of Technology, Allahabad</p>
