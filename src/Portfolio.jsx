@@ -78,7 +78,7 @@ const Portfolio = () => {
       image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=400',
       date: 'February 2025',
       features: ['User authentication', 'RESTful APIs', 'Google Maps integration', 'Responsive design'],
-        link: 'https://rideease25.netlify.app/',
+        link: 'https://nestora26.onrender.com/',
       link2: 'https://github.com/avinash4904/nestora'
     
       
