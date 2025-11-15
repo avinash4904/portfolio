@@ -34,7 +34,7 @@ const Portfolio = () => {
           }));
         });
       },
-      { threshold: 0.3}
+      { threshold: 0.3 }
     );
 
     const elements = document.querySelectorAll('[data-animate]');
@@ -48,16 +48,16 @@ const Portfolio = () => {
     setIsMenuOpen(false);
   };
 
- const skills = [
-  { name: 'React.js', level: 95, from: 'from-blue-500', to: 'to-cyan-400' },
-  { name: 'JavaScript', level: 90, from: 'from-yellow-500', to: 'to-orange-400' },
-  { name: 'Node.js/Express.js', level: 88, from: 'from-green-500', to: 'to-emerald-400' },
-  { name: 'Python', level: 85, from: 'from-purple-500', to: 'to-pink-400' },
-  { name: 'C++', level: 80, from: 'from-red-500', to: 'to-pink-400' },
-  { name: 'MongoDB', level: 85, from: 'from-green-600', to: 'to-green-400' },
-  { name: 'MySQL', level: 82, from: 'from-blue-600', to: 'to-blue-400' },
-  { name: 'AWS/Cloud', level: 75, from: 'from-orange-500', to: 'to-yellow-400' }
-];
+  const skills = [
+    { name: 'React.js', level: 95, from: 'from-blue-500', to: 'to-cyan-400' },
+    { name: 'JavaScript', level: 90, from: 'from-yellow-500', to: 'to-orange-400' },
+    { name: 'Node.js/Express.js', level: 88, from: 'from-green-500', to: 'to-emerald-400' },
+    { name: 'Python', level: 85, from: 'from-purple-500', to: 'to-pink-400' },
+    { name: 'C++', level: 80, from: 'from-red-500', to: 'to-pink-400' },
+    { name: 'MongoDB', level: 85, from: 'from-green-600', to: 'to-green-400' },
+    { name: 'MySQL', level: 82, from: 'from-blue-600', to: 'to-blue-400' },
+    { name: 'AWS/Cloud', level: 75, from: 'from-orange-500', to: 'to-yellow-400' }
+  ];
 
 
   const projects = [
@@ -78,10 +78,10 @@ const Portfolio = () => {
       image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=400',
       date: 'February 2025',
       features: ['User authentication', 'RESTful APIs', 'Google Maps integration', 'Responsive design'],
-        link: 'https://nestora26.onrender.com/',
+      link: 'https://nestora26.onrender.com/',
       link2: 'https://github.com/avinash4904/nestora'
-    
-      
+
+
     },
     {
       title: 'Autonomous Vehicle Control System',
@@ -254,22 +254,41 @@ const Portfolio = () => {
                   <div className="flex items-center space-x-4">
                     <Code className="text-cyan-400" size={24} />
                     <div>
-                      <div className="text-white font-semibold">Full Stack Development</div>
-                      <div className="text-gray-400 text-sm">React.js, Node.js, MongoDB</div>
+                      <div className="text-white font-semibold"> <a
+                        href="https://leetcode.com/u/avinash0824/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:underline"
+                      >
+                        Leetcode Account
+                      </a></div>
+                      <div className="text-gray-400 text-sm"></div>
                     </div>
                   </div>
                   <div className="flex items-center space-x-4">
                     <Palette className="text-purple-400" size={24} />
                     <div>
-                      <div className="text-white font-semibold">Problem Solving</div>
-                      <div className="text-gray-400 text-sm">Competitive Programming</div>
+                      <div className="text-white font-semibold">  <a
+                        href="https://www.geeksforgeeks.org/user/avinash4904/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:underline"
+                      >
+                        GFG Account
+                      </a></div>
                     </div>
                   </div>
                   <div className="flex items-center space-x-4">
                     <Zap className="text-yellow-400" size={24} />
                     <div>
-                      <div className="text-white font-semibold">Robotics & AI</div>
-                      <div className="text-gray-400 text-sm">Autonomous Vehicle Control</div>
+                      <div className="text-white font-semibold"> <a
+                        href="https://codeforces.com/profile/avi_5195"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:underline"
+                      >
+                        Codeforces Account
+                      </a></div>
                     </div>
                   </div>
                 </div>
