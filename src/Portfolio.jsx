@@ -72,7 +72,7 @@ const Portfolio = () => {
       link2: 'https://github.com/AshutoshMadhesiya/RideEase'
     },
     {
-      title: 'Nestora – Airbnb-Lite Platform',
+      title: 'Nestora – Accomodation Platform',
       description: 'Full-stack accommodation platform inspired by Airbnb with React.js frontend and Node.js/Express backend. Includes secure authentication and interactive maps.',
       tech: ['React.js', 'Node.js', 'Express', 'MongoDB', 'JWT', 'Tailwind CSS'],
       image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=400',
@@ -234,7 +234,7 @@ const Portfolio = () => {
               <div className="grid grid-cols-2 gap-6">
 
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-cyan-400">1710</div>
+                  <div className="text-3xl font-bold text-cyan-400">1788</div>
                   <div className="text-sm text-gray-400">LeetCode Rating</div>
                 </div>
                 <div className="text-center">
@@ -508,7 +508,7 @@ const Portfolio = () => {
                     className="flex items-center space-x-3 hover:text-green-300 transition"
                   >
                     <Code className="text-green-400" size={22} />
-                    <span className="text-gray-300 ">Top 13% LeetCoder (1710 rating)</span>
+                    <span className="text-gray-300 ">Top 10% LeetCoder (1788 rating)</span>
                   </a>
 
                   <div className="flex items-center space-x-3">
